@@ -1,0 +1,51 @@
+.tempWrap{ 
+	height:350px;
+	width: 350px;
+	margin: 0 auto;
+}
+.infoList ul{
+	margin-bottom: 15px;
+	margin-top: 20px;
+}
+.infoList li{
+	height: 40px;
+}
+.infoList a{
+	/*overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;*/
+}
+.li_pic{
+	position: relative;
+}
+.infoList a span{
+	position: absolute;
+	left: 269px;
+	margin-top: 3px;
+}
+.txt_bd{
+	width: 370px;
+	height: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.hd{
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: -10px;
+	margin: 0 auto;
+}
+.next{
+	display: block;
+	background: url(../images/down.png);
+	width: 30px;
+	height: 29px;
+	margin-top: 5px;
+}
+.next:hover{
+	background: url(../images/down_hover.png);
+}
+.txtScroll-top{
+	height: 380px;
+}

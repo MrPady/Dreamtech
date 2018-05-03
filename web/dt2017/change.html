@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dreamtech</title>
+	<link rel="stylesheet" type="text/css" href="css/change.css">
+</head>
+<body>
+	<div>
+        <form:form  commandName="person" class="basic-grey" action="/saveEditedPerson" method="post" enctype="multipart/form-data">
+            <h1>个人信息修改
+                <span>请修改以下信息：</span>
+            </h1>
+            <p>
+                <label>Id:</label>
+                <label>${person.id}</label>
+            </p>
+            <p>
+                <label>姓名:</label>
+                <label>${person.name}</label>
+            </p>
+            <p>
+                <label>电话:</label>
+                <form:input path="phone"/>
+            </p>
+            <p>
+                <label>QQ:</label>
+                <form:input path="qq"/>
+            </p>
+            <p>
+                <label>邮箱:</label>
+                <form:input path="mail"/>
+            </p>
+            <p>
+                <label>介绍:</label>
+                <form:textarea path="description"/>
+            </p>
+            <p>
+                <label>更改密码:</label>
+                <form:input path="description"/>
+            </p>
+            <p>
+                <label>上传照片</label>
+                <input id="file" type="file" >
+            </p>
+            <input type="submit" value="提交">
+        </form:form>
+    </div>
+
+    <form action="" method="post" class="basic-grey">
+		<h1>个人信息修改
+			<span>请修改以下信息：</span>
+		</h1>
+        <label>
+            <span>ID :</span>
+            <input id="Id" type="text" name="Id" placeholder="Your ID" />
+        </label>
+		<label>
+			<span>姓名 :</span>
+			<input id="name" type="text" name="name" placeholder="Your Full Name" />
+		</label>
+        <label>
+            <span>电话 :</span>
+            <input id="phone" type="text" name="phone" placeholder="Your Phone Number" />
+        </label>
+        <label>
+            <span>QQ :</span>
+            <input id="qq" type="text" name="qq" placeholder="Your QQ Number" />
+        </label>
+		<label>
+			<span>邮箱 :</span>
+			<input id="email" type="email" name="email" placeholder="Valid Email Address" />
+		</label>
+		<label>
+			<span>个人简介 :</span>
+			<textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+		</label>
+		<label>
+			<span>&nbsp;</span>
+			<input type="button" class="button" value="Send" />
+		</label>
+	</form>
+</body>
+</html>

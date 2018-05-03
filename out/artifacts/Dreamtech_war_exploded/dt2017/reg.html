@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dreamtech</title>
+	<!-- Include the FontAwesome CSS if you want to use feedback icons provided by FontAwesome -->
+    <link rel="stylesheet" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css" />
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/formValidation.css"/>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<!--[if IE]>
+		<script src="http://libs.baidu.com/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/formValidation.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/zh_CN.js"></script>
+    <script type="text/javascript" src="js/reg.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="head">
+			<span>欢迎报名！</span>
+			<a href="index.html">退出</a>
+		</div>
+	</div>
+    <div class="row">
+    	<div class="row_mid">
+	        <div class="col-sm-8 col-sm-offset-2">
+	            <form id="defaultForm" method="post" class="form-horizontal">
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">姓名</label>
+	                    <div class="col-sm-4">
+	                        <input type="text" class="form-control input-name" name="firstName" placeholder="姓名" />
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">性别</label>
+	                    <div class="col-sm-6">
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="gender" value="male" /> 男
+	                            </label>
+	                        </div>
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="gender" value="female" /> 女
+	                            </label>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">专业班级</label>
+	                    <div class="col-sm-5">
+	                        <input type="text" class="form-control input-class" name="username" />
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">学号</label>
+	                    <div class="col-sm-5">
+	                        <input type="text" class="form-control input-stu" name="stunum" />
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">手机号</label>
+	                    <div class="col-sm-5">
+	                        <input type="text" class="form-control input-phone" name="phone" />
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">QQ</label>
+	                    <div class="col-sm-5">
+	                        <input type="text" class="form-control input-qq" name="qq" />
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">兴趣方向</label>
+	                    <div class="col-sm-6">
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="direct" value="one" /> 前端
+	                            </label>
+	                        </div>
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="direct" value="two" /> 后台
+	                            </label>
+	                        </div>
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="direct" value="three" /> 硬件
+	                            </label>
+	                        </div>
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="direct" value="four" /> 软件
+	                            </label>
+	                        </div>
+	                        <div class="radio">
+	                            <label>
+	                                <input type="radio" name="direct" value="five" /> UI
+	                            </label>
+	                        </div>
+	                    </div>
+	                </div>
+
+	                <div class="form-group">
+	                    <label class="col-sm-3 control-label">个人简介</label>
+	                    <div class="col-sm-4">
+	                        <textarea type="text" class="form-control form-textarea" name="introduce" placeholder="可以讲一些个人介绍或者对兴趣方向的看法~" style="width: 300px;height: 200px"></textarea>
+	                    </div>
+	                </div>
+
+	                <div class="form-group" style="margin-top: 50px">
+	                    <div class="col-sm-9 col-sm-offset-3">
+	                        <button type="button" class="btn btn-primary" id="confirm" name="signup" value="Sign up">确认提交</button>
+	                    </div>
+	                </div>
+	            </form>
+	        </div>
+        </div>
+    </div>
+	
+</body>
+</html>

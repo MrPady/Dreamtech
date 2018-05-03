@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Dreamtech</title>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/cookie.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/pro.js"></script>
+</head>
+<body>
+	<div class="head_dt">
+		<div class="head">
+			<ul>
+				<li class="li_index"><a href="index.html">首页</a></li>
+				<li class="li_tech"><a href="project.html">技术</a></li>
+				<li class="li_finance"><a href="finance.html">财务</a></li>
+				<li class="li_social"><a href="log-maillist.html?grade=2000">社交</a></li>
+				<div class="clear"></div>
+			</ul>
+			<div class="dt_icon animated flip">
+				<img src="images/left_arrow.png">
+				<span class="animated">Dreamtech</span>
+				<img src="images/right_arrow.png">
+			</div>
+			<div class="left_divide"></div>
+			<div class="right_divide"></div>
+		</div>
+	</div>  
+	<div class="mid">
+		<div class="mid_cont">
+			<div class="mid_left pro_left">
+				<ul>
+					<li><a href="project.html">项目管理</a></li>
+					<li><a href="tech.html?ID=7">技术路线</a></li>
+				</ul>
+			</div>
+			<div class="mid_right pro_right">
+				<div class="project">
+					<div class="pro_tit">
+						<p>项目管理</p>
+					</div>
+					<input type='hidden' id='current_page' />  
+				    <input type='hidden' id='show_per_page' /> 
+					<div class="pro_cont">
+						<table cellspacing="0" cellpadding="0" class="animated fadeInRight" id="content">
+							<!-- <tr>
+								<th width="152px">项目时间</th>
+								<th width="252px">参与人员</th>
+								<th width="102px">负责人</th>
+								<th width="352px">项目名称</th>
+							</tr>
+							<tbody class="111">
+								<tr>
+									<td width="149px">2017年7月7日</td>
+									<td width="248px">张三、李素、飞洒、城市擦拭、擦上次上次、撒擦才是、新手处在现场、是多少啊成都、房贷市场导向</td>
+									<td width="97px">hhh</td>
+									<td width="352px">hhhhhh</td>
+								</tr>
+							<tbody> -->
+						</table>
+					</div>
+					<div id='page_navigation'></div>
+				</div>
+			</div>
+			<div class="clear"></div>	
+		</div>
+	</div>
+	<div class="footer">
+		<div class="foot">
+			<p>&copy;2017.Dreamtech Studio</p>
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script type="text/javascript">
+		new WOW().init();
+
+		$.ajax({
+			url: IP+"/json/projects",
+			type: "get",
+			dataType:"json",
+			success:function (data) {
+				console.log(data)								
+				var html="<tr><th width='152px'>项目时间</th><th width='252px'>参与人员</th><th width='102px'>负责人</th><th width='352px'>项目名称</th></tr>";
+				for (var i = 0; i < data.length; i++) {
+					var newDate=data[i].time;
+					var d=new Date(newDate);
+					var date=(d.getFullYear())+"/"+(d.getMonth()+1)+"/"+(d.getDate());
+					html+="<tr><td width='149px'>"+date+"</td><td width='248px'>"+data[i].teamer+"</td><td width='97px'>"+data[i].leader+"</td><td width='352px'></td></tr>"
+				}
+				console.log(html)
+				// html+="<tbody>";
+				$('table').html(html);
+				$('.pro_cont table tr:nth-child(odd)').addClass('bg_blue');
+				$('.pro_cont table tr:nth-child(even)').addClass('bg_white');
+			},
+	        error: function(XMLHttpRequest, textStatus, errorThrown) {
+	            alert(XMLHttpRequest.status);
+	            alert(XMLHttpRequest.readyState);
+	            alert(textStatus);
+	        },
+	        complete: function(XMLHttpRequest, textStatus) {
+	            this; // 调用本次AJAX请求时传递的options参数
+	        }
+		});
+	</script>
+</body>
+</html>

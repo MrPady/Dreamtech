@@ -1,0 +1,152 @@
+
+body {
+    margin: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+
+a{
+    text-decoration:none
+}
+
+.main {
+    width: 1000px;
+    height: 455px;
+    margin: 10px auto;
+}
+
+.head_with_hair{
+    margin: 0 auto;
+    padding: 0;
+    background: #cccccc;
+    width:1000px;
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow:2px 2px 5px #333333;
+}
+
+.hair{
+    width: 1000px;
+    height: 40px;
+    background: #cccccc;
+    padding: 5px 0;
+    margin: 0;
+}
+
+.part{
+    margin-left: 20px;
+}
+
+.head {
+    width: 1000px;
+    height: 90px;
+    line-height: 100px;
+    text-align: center;
+    background: #cccccc;
+    margin: 0;
+    padding: 0;
+}
+
+.middle {
+    width: 1000px;
+    height: 450px;
+    background: #cccccc;
+    position: relative;
+    padding-top: 5px;
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow:2px 2px 5px #333333;
+}
+
+#file{
+    position: relative;
+    margin-left: 100px;
+}
+
+#submit{
+    position: relative;
+    margin-left: 100px;
+}
+
+#reset{
+    position: relative;
+    margin-left: 100px;
+}
+
+
+#list_left{
+    width:150px;
+    height:410px;
+    background:#cccccc;
+    float: left;
+    padding: 30px;
+    text-align:center;
+    overflow: auto;
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow:2px 2px 5px #333333;
+
+}
+
+#list_right{
+    width: 720px;
+    height:410px;
+    float: right;
+    padding: 30px;
+    overflow: auto;
+    background: #cccccc;
+    -moz-box-shadow:2px 2px 5px #333333;
+    -webkit-box-shadow:2px 2px 5px #333333;
+    box-shadow:2px 2px 5px #333333;
+}
+
+.gallery{
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.ghostButton{
+     padding:5px 10px;
+     border:2px solid white;
+     color:white;
+     position:absolute;
+     top:10px;
+     left:10px;
+     display: none;
+ }
+
+.ghostButton1{
+    padding:5px 10px;
+    border:2px solid white;
+    color:white;
+    position:absolute;
+    top:130px;
+    left:150px;
+    display: none;
+}
+
+.ghostButton2{
+    padding:5px 10px;
+    border:2px solid white;
+    color:white;
+    position:absolute;
+    top:130px;
+    left:220px;
+    display: none;
+}
+.gallery:hover .ghostButton{
+    display: inline-block;
+}
+.gallery:hover .ghostButton1{
+    display: inline-block;
+}
+.gallery:hover .ghostButton2{
+    display: inline-block;
+}
+.galleries{
+    position: relative;
+}
